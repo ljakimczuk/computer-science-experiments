@@ -10,3 +10,27 @@ do
 od;
 print((x+y)/2); print((u+v)/2);
 ```
+
+# Remarks
+
+The algorithm is clearly an extension to the classic GCD algorithm, what can be seen after removing the u- and v- related parts, see below.
+
+```text
+x, y := X, Y
+do
+    x > y --> x := x-y []
+    x < y --> y := y-x
+od;
+print(x)
+```
+
+Since I've seen proofs of the GDC algorithm already I decided to focus on proving the LCM part only, taking the GDC part for granted, e.i. that x = y = GDC(X,Y) when the algorithm terminates.
+
+
+# Solution
+
+Let's start at the end, so with the expressions:
+
+\begin{equation}
+(u + v)/2 = LCM(X,Y)
+\end{equation}
