@@ -27,10 +27,18 @@ print(x)
 Since I've seen proofs of the GDC algorithm already I decided to focus on proving the LCM part only, especially I haven't seen this version ever before, taking the GDC part for granted, e.i. that $x = y = GDC(X,Y)$ when the algorithm terminates.
 
 
-# Solution
+# Towards the Solution
 
-Let's start at the end, so with the expression:
+My general idea was to find the loop invariant and prove the correctness with it.
+
+For that reason I started at the end, so with the expression we need to satisfy.
 
 $$
-R: (u + v)/2 = LCM(X,Y)
+R: (u+v)/2 = LCM(X,Y) <=> (u+v) = 2*LCM(X,Y)
+$$
+
+So when the algorithm terminates the sum of $u+v$ must be equal to the $2*LCM(X,Y). For the reason of being a very concrete, or strong, one I thought of weakening it, or making more general, so that this weakened form $R'$ at termination would imply the $R$.
+
+$$
+R' \land x=y \implies R
 $$
