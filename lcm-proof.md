@@ -24,13 +24,13 @@ od;
 print(x)
 ```
 
-Since I've seen proofs of the GDC algorithm already I decided to focus on proving the LCM part only, taking the GDC part for granted, e.i. that x = y = GDC(X,Y) when the algorithm terminates.
+Since I've seen proofs of the GDC algorithm already I decided to focus on proving the LCM part only, especially I haven't seen this version ever before, taking the GDC part for granted, e.i. that x = y = GDC(X,Y) when the algorithm terminates.
 
 
 # Solution
 
 Let's start at the end, so with the expressions:
 
-\begin{equation}
+$
 (u + v)/2 = LCM(X,Y)
-\end{equation}
+$
