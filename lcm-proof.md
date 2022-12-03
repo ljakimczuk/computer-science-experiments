@@ -37,7 +37,7 @@ $$
 R: {(u+v) \over 2} = LCM(X,Y) \Leftrightarrow (u+v) = 2LCM(X,Y)
 $$
 
-So when the algorithm terminates the sum of $u+v$ must be equal to the $2*LCM(X,Y)$. For the reason of being a very concrete, or strong, one I thought of weakening it, or making more general, so that this weakened form $R'$ at termination would imply the $R$.
+So when the algorithm terminates the sum of $u+v$ must be equal to the $2LCM(X,Y)$. For the reason of being a very concrete, or strong, one I thought of weakening it, or making more general, so that this weakened form $R'$ at termination would imply the $R$.
 
 $$
 R' \land x=y \implies R
