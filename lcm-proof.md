@@ -1,6 +1,6 @@
 # Task
 
-Prove the presented algorithm prints greatest common divisor followed by lowest common multiple of X, for X > 0, and Y, for Y > 0.
+Prove the presented algorithm prints greatest common divisor followed by lowest common multiple of $X$, for $X > 0$, and $Y$, for $Y > 0$.
 
 ```text
 x, y, u, v := X, Y, Y, X;
@@ -13,7 +13,7 @@ print((x+y)/2); print((u+v)/2);
 
 # Remarks
 
-The algorithm is clearly an extension to the classic GCD algorithm, what can be seen after removing the u- and v- related parts, see below.
+The algorithm is clearly an extension to the classic GCD algorithm, what can be seen after removing the $u$- and $v$- related parts, see below.
 
 ```text
 x, y := X, Y
