@@ -40,5 +40,5 @@ $$
 So when the algorithm terminates the sum of $u+v$ must be equal to the $2LCM(X,Y)$. For the reason of $R$ being a very concrete, or strong, I thought of weakening it, or making more general and easier to prove, so that this weakened form $R'$ at termination would imply the $R$.
 
 $$
-R' \land x=y \implies R
+R' \land x=y \Rightarrow R
 $$
