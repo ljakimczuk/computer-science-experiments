@@ -29,8 +29,8 @@ Since I've seen proofs of the GDC algorithm already I decided to focus on provin
 
 # Solution
 
-Let's start at the end, so with the expressions:
+Let's start at the end, so with the expression:
 
 $$
-(u + v)/2 = LCM(X,Y)
+R: (u + v)/2 = LCM(X,Y)
 $$
