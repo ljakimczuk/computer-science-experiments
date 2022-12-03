@@ -31,7 +31,7 @@ Since I've seen proofs of the GDC algorithm already I decided to focus on provin
 
 My general idea was to find the loop invariant and prove the correctness with it.
 
-For that reason I started at the end, so with the expression we need to satisfy.
+For that reason I started at the end, so with the expression I needed to satisfy.
 
 $$
 R: (u+v)/2 = LCM(X,Y) <=> (u+v) = 2*LCM(X,Y)
