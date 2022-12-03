@@ -31,6 +31,6 @@ Since I've seen proofs of the GDC algorithm already I decided to focus on provin
 
 Let's start at the end, so with the expressions:
 
-$
+$$
 (u + v)/2 = LCM(X,Y)
-$
+$$
