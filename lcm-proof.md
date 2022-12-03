@@ -34,7 +34,7 @@ My general idea was to find the loop invariant and prove the correctness with it
 For that reason I started at the end, so with the expression I needed to satisfy.
 
 $$
-R: ((u+v) \over 2) = LCM(X,Y) <=> (u+v) = 2LCM(X,Y)
+R: {(u+v) \over 2} = LCM(X,Y) <=> (u+v) = 2LCM(X,Y)
 $$
 
 So when the algorithm terminates the sum of $u+v$ must be equal to the $2*LCM(X,Y). For the reason of being a very concrete, or strong, one I thought of weakening it, or making more general, so that this weakened form $R'$ at termination would imply the $R$.
