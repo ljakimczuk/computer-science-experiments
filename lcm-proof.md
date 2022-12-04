@@ -3,12 +3,18 @@
 Prove the presented algorithm prints greatest common divisor followed by lowest common multiple of $X$, for $X > 0$, and $Y$, for $Y > 0$.
 
 ```go
-x, y, u, v := X, Y, Y, X;
-do
-    x > y --> x, v := x-y, v+u []
-    x < y --> y, u := y-x, u+v
-od;
-print((x+y)/2); print((u+v)/2);
+x, y, u, v := X, Y, Y, X
+for x != y {
+    if x > y {
+        x, v = x-y, v+u
+    }
+
+    if x < y {
+        y, u = y-x, u+v
+    }
+}
+fmt.Println((x + y) / 2)
+fmt.Println((u + v) / 2)
 ```
 
 # Remarks
@@ -17,11 +23,15 @@ The algorithm is clearly an extension to the classic GCD algorithm, what can be 
 
 ```go
 x, y := X, Y
-do
-    x > y --> x := x-y []
-    x < y --> y := y-x
-od;
-print(x)
+for x != y {
+    if x > y {
+        x = x - y
+    }
+    if x < y {
+        y = y - x
+    }
+}
+fmt.Println((x + y) / 2)
 ```
 
 Since I've seen proofs of the GDC algorithm already I decided to focus on proving the LCM part only, especially I haven't seen this version ever before, taking the GDC part for granted, e.i. that $x = y = GDC(X,Y)$ when the algorithm terminates.
