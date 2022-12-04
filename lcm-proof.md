@@ -2,7 +2,7 @@
 
 Prove the presented algorithm prints greatest common divisor followed by lowest common multiple of $X$, for $X > 0$, and $Y$, for $Y > 0$.
 
-```text
+```go
 x, y, u, v := X, Y, Y, X;
 do
     x > y --> x, v := x-y, v+u []
@@ -15,7 +15,7 @@ print((x+y)/2); print((u+v)/2);
 
 The algorithm is clearly an extension to the classic GCD algorithm, what can be seen after removing the $u$- and $v$- related parts, see below.
 
-```text
+```go
 x, y := X, Y
 do
     x > y --> x := x-y []
@@ -42,3 +42,5 @@ So when the algorithm terminates the sum of $u+v$ must be equal to the $2LCM(X,Y
 $$
 R' \land x=y \Rightarrow R
 $$
+
+This is where I met the first obstacle. Under the assumption of algorithm working correctly, I couldn't wrap my head around to build an intuition of why it works. It looks like LCM is computed as co-product of GCD calculations, and I felt in order to weaken the $R$ I need to understand what is going on, so I started dissecting $u$ and $v$.
