@@ -55,7 +55,7 @@ $$
 
 This is where I met the first obstacle. Under the assumption of algorithm working correctly, I couldn't wrap my head around to build an intuition of why it works. It looks like LCM is computed as co-product of GCD calculations, and I felt in order to weaken the $R$ I need to understand what is going on, so I started dissecting $u$ and $v$.
 
-Obviously, since $u = Y$ and $v = X$ at the beginning, both are mix of $X$s and $Y$s when the algorithm progresses.
+Obviously, since $u = Y$ and $v = X$ at the beginning, both are mix of $X$ and $Y$ when the algorithm progresses as well.
 
 $$
 u + v = kX + lY
