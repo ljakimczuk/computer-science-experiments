@@ -6,11 +6,11 @@ Prove the presented algorithm prints greatest common divisor followed by lowest 
 x, y, u, v := X, Y, Y, X
 for x != y {
     if x > y {
-        x, v = x-y, v+u
+        x, v = x - y, v + u
     }
 
     if x < y {
-        y, u = y-x, u+v
+        y, u = y - x, u + v
     }
 }
 fmt.Println((x + y) / 2)
@@ -54,3 +54,13 @@ R' \land x=y \Rightarrow R
 $$
 
 This is where I met the first obstacle. Under the assumption of algorithm working correctly, I couldn't wrap my head around to build an intuition of why it works. It looks like LCM is computed as co-product of GCD calculations, and I felt in order to weaken the $R$ I need to understand what is going on, so I started dissecting $u$ and $v$.
+
+Obviously, since $u = Y$ and $v = X$ at the beginning, both are mix of $X$s and $Y$s when the algorithm progresses.
+
+$$
+u + v = kX + lY
+\land
+v = k''X + l''Y \land u = k'X + l'Y
+\land
+k = k'' + k' \land l = l'' + l'
+$$
