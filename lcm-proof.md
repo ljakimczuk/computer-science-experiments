@@ -54,7 +54,7 @@ $$
 So when the algorithm terminates the sum of $u+v$ must be equal to the $2LCM(X,Y)$. For the reason of $R$ being a very concrete, or strong, I thought of weakening it, or making it dependant on the variable and hence hopefully easier to prove, so that this weakened form $R'$ at termination, when $x=y$ would be equal to the $R$.
 
 $$
-R': kX = lY + t, t >= 0
+R': kX = lY + t
 $$
 
 $$
