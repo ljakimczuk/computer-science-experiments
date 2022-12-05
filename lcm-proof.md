@@ -107,6 +107,7 @@ So, intuitively the algoritm works by keeping track of differences $k''X - l''Y$
 $$
 k''X - l''Y = n > m = l'Y - k'X
 $$
+
 $$
 (k'' + k')X - (l'' + l')Y = n - m < n
 $$
