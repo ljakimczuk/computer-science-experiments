@@ -102,7 +102,8 @@ for (kv*X - lv*Y) != (lu*Y - ku*X) {
 fmt.Println(((kv + ku) * X + (lu + lv) * Y) / 2)
 ```
 
-So, intuitively the algoritm works by keeping track of differences $k''X - l''Y$ and $l'Y - k'X$. If first is greater than the other, the $k''$ and the $l''$ are increased by the $k'$ and the $l'$ respectively, making it smaller, because $l'Y - k'X$ is smaller. When it is smaller already, the process is reversed, i.e. the $k'$ and $l'$ are increased by the $k''$ and the $l''$ respectively, making the other one smaller. The process stops when both are euqal, meaning the $kX = lY$.
+So, intuitively the algoritm works by keeping track of differences $k''X - l''Y$ and $l'Y - k'X$. If first is greater than the other, the $k''$ and the $l''$ are increased by the $k'$ and the $l'$ respectively, making it smaller, because $l'Y - k'X$ is smaller, see below.
+When it is smaller already, the process is reversed, i.e. the $k'$ and $l'$ are increased by the $k''$ and the $l''$ respectively, making the other one smaller. The process stops when both are euqal, meaning the $kX = lY$.
 
 $$
 k''X - l''Y = n > m = l'Y - k'X
