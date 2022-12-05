@@ -44,13 +44,20 @@ My general idea was to find the loop invariant and prove the correctness with it
 For that reason I started at the end, so with the expression I needed to satisfy.
 
 $$
-R: {(u+v) \over 2} = LCM(X,Y) \Leftrightarrow (u+v) = 2LCM(X,Y) = aX + bY, where LCM(X,Y) = aX = bY
+R: {(u+v) \over 2} = LCM(X,Y) \Leftrightarrow (u+v) = 2LCM(X,Y) = aX + bY
+$$
+
+$$
+LCM(X,Y) = aX = bY
 $$
 
 So when the algorithm terminates the sum of $u+v$ must be equal to the $2LCM(X,Y)$. For the reason of $R$ being a very concrete, or strong, I thought of weakening it, or making it dependant on the variable and hence hopefully easier to prove, so that this weakened form $R'$ at termination, when $x=y$ would be equal to the $R$.
 
 $$
 R': kX = lY + t, t >= 0
+$$
+
+$$
 R' \land t=0 \Leftrightarrow R
 $$
 
@@ -99,5 +106,7 @@ So, intuitively the algoritm works by keeping track of differences $k''X - l''Y$
 
 $$
 k''X - l''Y = n > m = l'Y - k'X
+$$
+$$
 (k'' + k')X - (l'' + l')Y = n - m < n
 $$
