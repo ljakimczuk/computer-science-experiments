@@ -78,7 +78,7 @@ At the beginning we have $k'' = 1$, $k' = 0$, $l'' = 0$ and $l' = 1$. When the a
 After working out some examples, I noticed that both, $x$ and $y$, are related to the newly identified variables.
 
 $$
-x = k''X - l''Y \land y = l'Y - k'X \Rightarrow kX = lY + x - y
+x = k''X - l''Y \land y = l'Y - k'X \Leftrightarrow kX = lY + x - y
 $$
 
 With this observation, the algorithm given can be rewritten a bit, dropping the GCD part entirely, to show of why it works for LCM.
