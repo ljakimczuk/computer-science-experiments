@@ -61,17 +61,17 @@ On account on the previous observation, we know that both $u$ and $v$ are mix of
 $$
 u + v = kX + lY
 \land
-v = k"X + l"Y \land u = k'X + l'Y
+v = k''X + l''Y \land u = k'X + l'Y
 \land
-k = k" + k' \land l = l" + l'
+k = k'' + k' \land l = l'' + l'
 $$
 
-At the beginning we obviously have $k" = 1$, $k' = 0$, $l" = 0$ and $l' = 1$. When the algorithm progresses we gradually increase four variables $k"X$, $k'X$, $l"Y$ and $l'Y$, so that at the end we have $kX = lY$. It still however does not tell of why the variables are manipulated the way they are.
+At the beginning we obviously have $k'' = 1$, $k' = 0$, $l'' = 0$ and $l' = 1$. When the algorithm progresses we gradually increase four variables $k''X$, $k'X$, $l''Y$ and $l'Y$, so that at the end we have $kX = lY$. It still however does not tell of why the variables are manipulated the way they are.
 
 After inpsection, it can be noticed that both, $x$ and $y$, are related to the newly identified variables.
 
 $$
-x = k"X - l"Y \land y = l'Y - k'X \Leftrightarrow kX = lY + x - y
+x = k''X - l''Y \land y = l'Y - k'X \Leftrightarrow kX = lY + x - y
 $$
 
 With this observation, the algorithm given can be rewritten a bit, dropping the GCD part entirely, to show of why it works for LCM.
@@ -85,15 +85,15 @@ od;
 print((((k"+k')*X) + ((l"+l')*Y))/2);
 ```
 
-So, intuitively the algoritm works by keeping track of differences $k"X - l"Y$ and $l'Y - k'X$. If first is greater than the other, the $k"$ and the $l"$ are increased by the $k'$ and the $l'$ respectively, making it smaller, because $l'Y - k'X$ is smaller, see below.
-When it is smaller already, the process is reversed, i.e. the $k'$ and $l'$ are increased by the $k"$ and the $l"$ respectively, making the other one smaller. The process stops when both are euqal, meaning the $kX = lY$.
+So, intuitively the algoritm works by keeping track of differences $k''X - l''Y$ and $l'Y - k'X$. If first is greater than the other, the $k''$ and the $l''$ are increased by the $k'$ and the $l'$ respectively, making it smaller, because $l'Y - k'X$ is smaller, see below.
+When it is smaller already, the process is reversed, i.e. the $k'$ and $l'$ are increased by the $k''$ and the $l''$ respectively, making the other one smaller. The process stops when both are euqal, meaning the $kX = lY$.
 
 $$
-k"X - l"Y = n > m = l'Y - k'X
+k''X - l''Y = n > m = l'Y - k'X
 $$
 
 $$
-(k" + k')X - (l" + l')Y = n - m < n
+(k'' + k')X - (l'' + l')Y = n - m < n
 $$
 
 This observation also find the $t$ I was looking for.
