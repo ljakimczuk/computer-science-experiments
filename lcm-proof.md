@@ -35,7 +35,7 @@ My general idea was to find the loop invariant and prove the correctness with it
 For that reason I started at the end, so with the expression I needed to satisfy. Obviously, since $u = Y$ and $v = X$ at the beginning, and on the account that the only permitable operation is addition, both must be a mix of $X$ and $Y$ when the algorithm terminates, so as the sum $u + v$. Since we divide this sum by 2 at the end, this sum is expected to be equal to $2LCM(X,Y)$. Since the sum is combination of proportions of $X$, say $a$, and proportions of $Y$, say $b$, both $aX$ and $bY$ must be equal to each other and to $LCM(X,Y)$. Let's capture this by conditions $R1$ and $R2$.
 
 $$
-R1: {(u+v) \over 2} = LCM(X,Y) \Leftrightarrow (u+v) = 2 \times LCM(X,Y) = aX + bY
+R1: {(u+v) \over 2} = LCM(X,Y) \Leftrightarrow (u+v) = 2 \cdot LCM(X,Y) = aX + bY
 $$
 
 $$
