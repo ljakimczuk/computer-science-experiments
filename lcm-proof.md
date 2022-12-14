@@ -66,9 +66,9 @@ v = k''X + l''Y \land u = k'X + l'Y
 k = k'' + k' \land l = l'' + l'
 $$
 
-At the beginning we obviously have $k'' = 1$, $k' = 0$, $l'' = 0$ and $l' = 1$. When the algorithm progresses we gradually increase four variables $k''X$, $k'X$, $l''Y$ and $l'Y$, so that at the end we have $kX = lY$. It still however does not tell of why the variables are manipulated the way they are.
+At the beginning we obviously have $k'' = 1$, $k' = 0$, $l'' = 0$ and $l' = 1$. When the algorithm progresses we gradually increase these four variables, so that at the end we have $kX = lY$. It still however does not tell of why the variables are manipulated the way they are.
 
-After inpsection, it can be noticed that both, $x$ and $y$, are related to the newly identified variables.
+The key to understanding what the algorithm does is, after inpsection, it can be noticed that both, $x$ and $y$, are related to the newly identified variables.
 
 $$
 x = k''X - l''Y \land y = l'Y - k'X \Leftrightarrow kX = lY + x - y
