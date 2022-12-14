@@ -56,7 +56,7 @@ This would show that at the end, when the algorithm terminates, we get $kX = lY$
 
 This is where I met the first obstacle. Under the assumption of the algorithm working correctly, I couldn't wrap my head around to build an intuition of why it works. It looks like LCM is computed as co-product of GCD calculations, and I felt in order to find the suitable $t$ and prove the found multiple is the lowest, I need to understand what is going on, so I started dissecting $u$ and $v$.
 
-On account on the previous observation, we know that both $u$ and $v$ are mix of $X$ and $Y$ through the course of algorithm.
+On account on the previous observation, we know that both $u$ and $v$ are mix of $X$ and $Y$ through the course of algorithm, so we may capture this extending the previous expression.
 
 $$
 u + v = kX + lY
